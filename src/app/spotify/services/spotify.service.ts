@@ -24,10 +24,7 @@ export class SpotifyService {
 
     return this.api.get(`/${this.path}`);
   }
-
-
-
-
+/*
   getAll() {
     return this.api.get(`/${this.path}`);
   }
@@ -47,6 +44,6 @@ export class SpotifyService {
 
   delete(projectId:number): Observable<any> {
     return this.api.delete(`/${this.path}/${projectId}`);
-  }
+  }*/
 
 }

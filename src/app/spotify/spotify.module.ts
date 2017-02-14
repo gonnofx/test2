@@ -9,7 +9,7 @@ import {
     SpotifyComponent,
     SpotifyListComponent,
     // Services
-    // SpotifyService
+    SpotifyService
 } from './';
 
 
@@ -27,9 +27,9 @@ import {
     declarations: [
         SpotifyComponent,
         SpotifyListComponent
-    ]/*,
+    ],
     providers: [
-        //SpotifyService
-    ]*/
+        SpotifyService
+    ]
 })
 export class SpotifyModule {}
