@@ -1,21 +1,17 @@
 import { Routes } from '@angular/router';
 
-import { 
-    SpotifyComponent,
-    SpotifyListComponent
-} from './spotify';
-
-import { AboutComponent } from './about/about.component';
+import { ListComponent } from './list/list.component';
 import { HomeComponent } from './home/home.component';
-import { RepoBrowserComponent } from './github/repo-browser/repo-browser.component';
+/*import { RepoBrowserComponent } from './github/repo-browser/repo-browser.component';
 import { RepoListComponent } from './github/repo-list/repo-list.component';
-import { RepoDetailComponent } from './github/repo-detail/repo-detail.component';
+import { RepoDetailComponent } from './github/repo-detail/repo-detail.component';*/
 import { ContactComponent } from './contact/contact.component';
 
 export const rootRouterConfig: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
+  { path: 'list', component: ListComponent },
+  /*{ path: 'about', component: AboutComponent },
   { path: 'github', component: RepoBrowserComponent,
     children: [
       { path: '', component: RepoListComponent },
@@ -25,12 +21,7 @@ export const rootRouterConfig: Routes = [
           { path: ':repo', component: RepoDetailComponent }
         ]
       }]
-  },
-  { path: 'contact', component: ContactComponent },
-  { path: 'spotify', component: SpotifyComponent,
-    children: [
-      { path: '', component: SpotifyListComponent }
-    ]
-  },
+  },*/
+  { path: 'contact', component: ContactComponent }
 ];
 

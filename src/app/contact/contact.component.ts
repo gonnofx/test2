@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import CustomValidators from '../forms/CustomValidators';
+import CustomValidators from '../_core/config/CustomValidators';
 
 @Component({
   selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact-component.css']
+  templateUrl: './contact.tpl.html',
+  styleUrls: ['./contact.scss']
 })
 export class ContactComponent implements OnInit {
   contactForm: FormGroup;
